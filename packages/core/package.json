@@ -1,15 +1,15 @@
 {
-  "name": "@web3-react/core",
+  "name": "@starcoin/starswap-web3-react-core",
   "publishConfig": {
     "access": "public"
   },
   "version": "6.1.9",
-  "description": "A simple, maximally extensible, dependency minimized framework for building modern Ethereum dApps",
+  "description": "A simple, maximally extensible, dependency minimized framework for building modern Starcoin dApps",
   "keywords": [
     "react",
     "react-hooks",
     "hooks",
-    "ethereum",
+    "starcoin",
     "javascript",
     "typescript",
     "web3",
@@ -36,6 +36,7 @@
   },
   "dependencies": {
     "@ethersproject/keccak256": "^5.0.0-beta.130",
+    "@starcoin/stc-util": "^0.3.0",
     "@web3-react/abstract-connector": "^6.0.7",
     "@web3-react/types": "^6.0.7",
     "tiny-invariant": "^1.0.6",
