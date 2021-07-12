@@ -1,9 +1,9 @@
 {
-  "name": "@starcoin/starswap-web3-react-injected-connector",
+  "name": "@starcoin/starswap-web3-injected-connector",
   "publishConfig": {
     "access": "public"
   },
-  "version": "6.0.7",
+  "version": "0.1.0",
   "description": "A simple, maximally extensible, dependency minimized framework for building modern Starcoin dApps",
   "keywords": [
     "react",

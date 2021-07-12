@@ -1,9 +1,9 @@
 {
-  "name": "@starcoin/starswap-web3-react-core",
+  "name": "@starcoin/starswap-web3-core",
   "publishConfig": {
     "access": "public"
   },
-  "version": "6.1.9",
+  "version": "0.1.0",
   "description": "A simple, maximally extensible, dependency minimized framework for building modern Starcoin dApps",
   "keywords": [
     "react",
