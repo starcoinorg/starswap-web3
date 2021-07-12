@@ -1,5 +1,5 @@
 {
-  "name": "@starcoin/starswap-web3-react-injected-connector",
+  "name": "@starcoin/starswap-web3-injected-connector",
   "publishConfig": {
     "access": "public"
   },
