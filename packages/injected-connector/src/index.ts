@@ -78,8 +78,8 @@ export class InjectedConnector extends AbstractConnector {
       window.starcoin.on('networkChanged', this.handleNetworkChanged)
     }
 
-    if ((window.starcoin as any).isMetaMask) {
-      ;(window.starcoin as any).autoRefreshOnNetworkChange = false
+    if ((window.starcoin as any).isStarMask) {
+      ; (window.starcoin as any).autoRefreshOnNetworkChange = false
     }
 
     // try to activate + get account via stc_requestAccounts
@@ -113,40 +113,9 @@ export class InjectedConnector extends AbstractConnector {
       throw new NoStarcoinProviderError()
     }
 
-    let chainId
-    try {
-      chainId = await (window.starcoin.send as Send)('eth_chainId').then(parseSendReturn)
-    } catch {
-      warning(false, 'eth_chainId was unsuccessful, falling back to net_version')
-    }
-
-    if (!chainId) {
-      try {
-        chainId = await (window.starcoin.send as Send)('net_version').then(parseSendReturn)
-      } catch {
-        warning(false, 'net_version was unsuccessful, falling back to net version v2')
-      }
-    }
-
-    if (!chainId) {
-      try {
-        chainId = parseSendReturn((window.starcoin.send as SendOld)({ method: 'net_version' }))
-      } catch {
-        warning(false, 'net_version v2 was unsuccessful, falling back to manual matches and static properties')
-      }
-    }
-
-    if (!chainId) {
-      if ((window.starcoin as any).isDapper) {
-        chainId = parseSendReturn((window.starcoin as any).cachedResults.net_version)
-      } else {
-        chainId =
-          (window.starcoin as any).chainId ||
-          (window.starcoin as any).netVersion ||
-          (window.starcoin as any).networkVersion ||
-          (window.starcoin as any)._chainId
-      }
-    }
+    const chainId =
+      (window.starcoin as any).chainId ||
+      (window.starcoin as any).networkVersion
 
     return chainId
   }
