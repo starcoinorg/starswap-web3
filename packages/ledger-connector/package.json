@@ -21,7 +21,7 @@
   "author": "Noah Zinsmeister <noahwz@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "git://github.com/NoahZinsmeister/web3-react.git"
+    "url": "git://github.com/starcoinorg/starswap-web3.git"
   },
   "main": "dist/index.js",
   "module": "dist/ledger-connector.esm.js",

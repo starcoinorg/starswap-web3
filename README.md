@@ -5,7 +5,7 @@ _A simple, maximally extensible, dependency minimized framework for building mod
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
-[![Actions Status](https://github.com/NoahZinsmeister/web3-react/workflows/CI/badge.svg)](https://github.com/NoahZinsmeister/web3-react/actions)
+[![Actions Status](https://github.com/starcoinorg/starswap-web3/workflows/CI/badge.svg)](https://github.com/starcoinorg/starswap-web3/actions)
 
 | Packages                              | `@latest` Version                                                                                                                                                         | Size                                                                                                                                                                                 | Description                                                                         |
 | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------- |
@@ -22,7 +22,7 @@ _A simple, maximally extensible, dependency minimized framework for building mod
 | _Hardware_                            |
 | `@web3-react/ledger-connector`        | [![npm version](https://img.shields.io/npm/v/@web3-react/ledger-connector/latest.svg)](https://www.npmjs.com/package/@web3-react/ledger-connector/v/latest)               | [![minzip](https://img.shields.io/bundlephobia/minzip/@web3-react/ledger-connector/latest.svg)](https://bundlephobia.com/result?p=@web3-react/ledger-connector@latest)               | [Ledger](https://www.ledger.com/) Connector                                         |
 | `@web3-react/trezor-connector`        | [![npm version](https://img.shields.io/npm/v/@web3-react/trezor-connector/latest.svg)](https://www.npmjs.com/package/@web3-react/trezor-connector/v/latest)               | [![minzip](https://img.shields.io/bundlephobia/minzip/@web3-react/trezor-connector/latest.svg)](https://bundlephobia.com/result?p=@web3-react/trezor-connector@latest)               | [Trezor](https://trezor.io/) Connector                                              |
-| `@web3-react/lattice-connector`        | [![npm version](https://img.shields.io/npm/v/@web3-react/lattice-connector/latest.svg)](https://www.npmjs.com/package/@web3-react/lattice-connector/v/latest)               | [![minzip](https://img.shields.io/bundlephobia/minzip/@web3-react/lattice-connector/latest.svg)](https://bundlephobia.com/result?p=@web3-react/lattice-connector@latest)               | [Lattice](https://gridplus.io/) Connector                                              |
+| `@web3-react/lattice-connector`       | [![npm version](https://img.shields.io/npm/v/@web3-react/lattice-connector/latest.svg)](https://www.npmjs.com/package/@web3-react/lattice-connector/v/latest)             | [![minzip](https://img.shields.io/bundlephobia/minzip/@web3-react/lattice-connector/latest.svg)](https://bundlephobia.com/result?p=@web3-react/lattice-connector@latest)             | [Lattice](https://gridplus.io/) Connector                                           |
 | _Native_                              |
 | `@web3-react/frame-connector`         | [![npm version](https://img.shields.io/npm/v/@web3-react/frame-connector/latest.svg)](https://www.npmjs.com/package/@web3-react/frame-connector/v/latest)                 | [![minzip](https://img.shields.io/bundlephobia/minzip/@web3-react/frame-connector/latest.svg)](https://bundlephobia.com/result?p=@web3-react/frame-connector@latest)                 | [Frame](https://frame.sh/) Connector                                                |
 | _Hosted_                              |
@@ -37,7 +37,7 @@ _A simple, maximally extensible, dependency minimized framework for building mod
 
 ## Quickstart
 
-[![Edit web3-react-example](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/NoahZinsmeister/web3-react/tree/v6/example?fontsize=14&hidenavigation=1&theme=dark)
+[![Edit web3-react-example](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/starcoinorg/starswap-web3/tree/v6/example?fontsize=14&hidenavigation=1&theme=dark)
 
 ## [Documentation](docs)
 
@@ -60,7 +60,6 @@ _Open a PR to add your project to the list!_
 - [Eth2 Launchpad](https://launchpad.ethereum.org/)
 - [EthBlockArt](https://ethblock.art/)
 
-
 ## Related Efforts
 
 - [Web3Modal](https://github.com/web3modal/web3modal)
@@ -68,7 +67,7 @@ _Open a PR to add your project to the list!_
 ## Local Development
 
 - Clone repo\
-  `git clone https://github.com/NoahZinsmeister/web3-react.git`
+  `git clone https://github.com/starcoinorg/starswap-web3.git`
 
 - Install top-level dependencies\
   `yarn`
