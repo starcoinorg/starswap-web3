@@ -3,7 +3,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "A simple, maximally extensible, dependency minimized framework for building modern Starcoin dApps",
   "keywords": [
     "react",

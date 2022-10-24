@@ -1,5 +1,5 @@
 import { toChecksumAddress } from '@starcoin/stc-util'
-// import invariant from 'tiny-invariant'
+import invariant from 'tiny-invariant'
 
 export function normalizeChainId(chainId: string | number): number {
   if (typeof chainId === 'string') {
@@ -9,12 +9,10 @@ export function normalizeChainId(chainId: string | number): number {
     chainId = chainId.replace(/^Ox/, '0x')
 
     const parsedChainId = Number.parseInt(chainId, chainId.trim().substring(0, 2) === '0x' ? 16 : 10)
-    console.error(!Number.isNaN(parsedChainId), `chainId ${ chainId } is not an integer`)
-    // invariant(!Number.isNaN(parsedChainId), `chainId ${ chainId } is not an integer`)
+    invariant(!Number.isNaN(parsedChainId), `chainId ${ chainId } is not an integer`)
     return parsedChainId
   } else {
-    console.error(Number.isInteger(chainId), `chainId ${ chainId } is not an integer`)
-    // invariant(Number.isInteger(chainId), `chainId ${ chainId } is not an integer`)
+    invariant(Number.isInteger(chainId), `chainId ${ chainId } is not an integer`)
     return chainId
   }
 }
