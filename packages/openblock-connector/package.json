@@ -3,7 +3,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A simple, maximally extensible, dependency minimized framework for building modern Starcoin dApps",
   "keywords": [
     "react",
@@ -24,7 +24,7 @@
     "url": "git@github.com:starcoinorg/starswap-web3.git"
   },
   "main": "dist/index.js",
-  "module": "dist/injected-connector.esm.js",
+  "module": "dist/starswap-web3-openblock-connector.esm.js",
   "typings": "dist/index.d.ts",
   "files": [
     "dist"
