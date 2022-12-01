@@ -1,4 +1,4 @@
-interface Starcoin {
+interface Ethereum {
   send: unknown
   enable: () => Promise<string[]>
   on?: (method: string, listener: (...args: any[]) => void) => void
@@ -6,7 +6,7 @@ interface Starcoin {
 }
 
 declare interface Window {
-  starcoin?: Starcoin
+  ethereum?: Ethereum
 }
 
 declare const __DEV__: boolean
